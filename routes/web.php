@@ -17,3 +17,6 @@ Route::get('/', function () {
 Route::get('/tracy', function () {
     throw new \Exception('Tracy works!');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
