@@ -10,13 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Middleware\CheckAge;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware(CheckAge::class);
+
 Route::get('/tracy', function () {
     throw new \Exception('Tracy works!');
 });
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
