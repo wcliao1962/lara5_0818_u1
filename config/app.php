@@ -180,6 +180,8 @@ return [
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
         Recca0120\LaravelTracy\LaravelTracyServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
 
     ],
 
@@ -230,6 +232,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+
 
     ],
 
